@@ -3,8 +3,8 @@ db.produtos.updateMany({}, {
     valoresNutricionais: {
       $each: [],
       $slice: 3,
-  }}})
+  } } });
 
-db.produtos.find({ingredientes: "picles"},{
-   _id:false, nome:true, ingredientes:true, valoresNutricionais:true
+db.produtos.find({ ingredientes: "picles" }, {
+   _id: false, nome: true, ingredientes: true, valoresNutricionais: true,
 });

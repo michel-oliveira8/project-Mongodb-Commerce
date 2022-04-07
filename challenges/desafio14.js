@@ -1,0 +1,1 @@
+db.produtos.find({ ingredientes: "picles" }, { valoresNutricionais: { $slice: 3 } });

@@ -1,7 +1,3 @@
-db.produtos.updateMany({
-  $or: [{ nome: "Big Mac" }, { nome: "Quarteirão com Queijo" }],
-}, { $addToSet: { ingredientes: "bacon" } });
+db.resumoProdutos.insertOne({ franquia: "McDonalds", totalProdutos: 5 });
 
-db.produtos.find({}, {
-  _id: false, nome: true, ingredientes: true,
-});
+db.resumoProdutos.find({}, { _id: false });
